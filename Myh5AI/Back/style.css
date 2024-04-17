@@ -1,0 +1,108 @@
+.dossier {
+    margin-left: 20px;
+    border-left: 2px solid #ccc;
+    padding-left: 10px;
+    position: relative;
+}
+
+.dossier::before {
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: #ccc;
+    position: absolute;
+    left: -11px;
+    top: 10px;
+}
+
+.icon-directory {
+    font-weight: bold;
+    color: #333;
+}
+
+.contenuDossier {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.contenuDossier p {
+    margin-left: 10px;
+}
+
+.icon-directory::before {
+    content: '📁 ';
+    color: #FFA500;
+}
+
+.icon-pdf::before {
+    content: '📄 ';
+    color: #FF0000;
+}
+
+.icon-image::before {
+    content: '🖼️ ';
+    color: #00FF00;
+}
+
+.icon-file::before {
+    content: '📃 ';
+    color: #0000FF;
+}
+
+.icon-php::before {
+    content: url('./assets/php.png') ' ';
+    color: #0000FF;
+}
+
+.icon-js::before {
+    content: url('./assets/js.png') ' ';
+    color: #0000FF;
+}
+
+.icon-html::before {
+    content: url('./assets/html.png') ' ';
+    color: #0000FF;
+}
+
+.icon-css::before {
+    content: url('./assets/css.png') ' ';
+    color: #0000FF;
+}
+
+.icon-py::before {
+    content: url('./assets/python.png') ' ';
+    color: #0000FF;
+}
+
+body{
+    display:flex;
+    justify-content: space-between;
+}
+
+.showContent{
+    width:40vw;
+    margin-right: 10vw;
+    margin-top: 1vw;
+    display: none;
+    border: 1px black solid;
+    padding:10px;
+    border-radius: 4px;
+    max-height: 70vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.close{
+cursor: pointer;
+}
+
+.showImage{
+    height:auto;
+    width: 50%;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
